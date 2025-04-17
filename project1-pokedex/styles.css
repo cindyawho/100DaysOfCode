@@ -1,0 +1,23 @@
+:root {
+    --bg-color-red: #DC0A2D;
+    --bg-color-black: #232323;
+    --accent-color-gray: #DEDEDE;
+    --accent-color-blue: #28AAFD;
+    --accent-color-green: #51AE5F;
+}
+
+body {
+    background-color: var(--accent-color-gray);
+}
+
+.header { 
+    text-align: center;
+}
+
+.pokedex {
+    width: 50%;
+    background-color: var(--bg-color-red);
+    border-radius: 50px;
+    margin: 0 auto;
+    padding: 20px;
+}
