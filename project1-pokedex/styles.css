@@ -1,5 +1,5 @@
 :root {
-    --bg-color-red: #DC0A2D;
+    --bg-color-red: #CC0505;
     --bg-color-black: #232323;
     --accent-color-gray: #DEDEDE;
     --accent-color-blue: #28AAFD;
@@ -16,8 +16,14 @@ body {
 
 .pokedex {
     width: 50%;
+    min-width: 330px;
+    min-height: 750px;
     background-color: var(--bg-color-red);
-    border-radius: 50px;
+    border-radius: 50px 0 0 50px;
     margin: 0 auto;
     padding: 20px;
+}
+
+.screen {
+
 }
