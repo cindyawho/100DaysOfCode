@@ -15,15 +15,29 @@ body {
 }
 
 .pokedex {
-    width: 50%;
+    min-width: 660px;
+}
+
+.pokedexLeft {
+    width: 45%;
     min-width: 330px;
-    min-height: 750px;
+    min-height: 500px;
     background-color: var(--bg-color-red);
     border-radius: 50px 0 0 50px;
-    margin: 0 auto;
+    left: 0;
     padding: 20px;
 }
 
 .screen {
 
+}
+
+.pokedexRight {
+    width: 45%;
+    min-width: 330px;
+    min-height: 500px;
+    background-color: var(--bg-color-red);
+    border-radius: 0 50px 50px 0;
+    right: 0;
+    padding: 20px;
 }
