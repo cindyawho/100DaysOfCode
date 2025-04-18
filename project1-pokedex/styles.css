@@ -16,16 +16,35 @@ body {
 
 .pokedex {
     min-width: 660px;
+    display: flex;
+}
+
+.pokedexLeft-header{
+    width: 100%;
+    min-width: 330px;
+    max-width: 500px;
+    min-height: 123px;
+    border-radius: 50px 0 0 0px;
+    box-shadow: 0px 5px 10px 2px black;
+    background-color: var(--bg-color-red);
+}
+
+.pokedexHalf{
+    width: 45%;
+    min-width: 330px;
+    max-width: 500px;
+    min-height: 500px;
+    max-height: 700px;
 }
 
 .pokedexLeft {
-    width: 45%;
-    min-width: 330px;
-    min-height: 500px;
-    background-color: var(--bg-color-red);
-    border-radius: 50px 0 0 50px;
+    border-radius: 0 0 0 50px;
     left: 0;
-    padding: 20px;
+    background-color: var(--bg-color-red);
+    width: 100%;
+    min-height: 500px;
+    max-height: 700px;
+    margin-top: 0px;
 }
 
 .screen {
@@ -33,11 +52,8 @@ body {
 }
 
 .pokedexRight {
-    width: 45%;
-    min-width: 330px;
-    min-height: 500px;
-    background-color: var(--bg-color-red);
     border-radius: 0 50px 50px 0;
     right: 0;
-    padding: 20px;
+    background-color: var(--bg-color-red);
+    margin-top: 125px;
 }
