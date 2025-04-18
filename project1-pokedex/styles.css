@@ -8,6 +8,7 @@
 
 body {
     background-color: var(--accent-color-gray);
+    box-sizing: border-box;
 }
 
 .header { 
@@ -84,9 +85,8 @@ body {
 }
 
 .pokedexHalf{
-    width: 50%;
-    min-width: 500px;
-    max-width: 700px;
+    /* width: 50%; */
+    width: 500px;
     min-height: 500px;
     max-height: 700px;
 }
@@ -145,8 +145,29 @@ body {
 /* *************************************************** */
 
 .grayRectangle{
-
+    width: 380px;
+    height: 380px;
+    background-color: var(--accent-color-gray);
+    padding: 20px 0;
+}
+.grayLeft{
+    margin: 0 45px;
+    border-radius: 0 0 0 70px;
+}
+.grayRight{
+    /* margin: 100px 55px; */
+    border-radius: 0 0 70px 0;
+}
+.container{
+    padding: 70px;
+}
+.searchBar{
+    z-index: 5;
 }
 .screen{
-
+    position: relative;
+    width: 330px;
+    height: 300px;
+    margin: auto auto;
+    background-color: var(--accent-color-blue);
 }
