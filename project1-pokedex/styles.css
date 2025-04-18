@@ -14,6 +14,10 @@ body {
     text-align: center;
 }
 
+/* *************************************************** */
+/* ***********       Pokedex Header     ************* */
+/* *************************************************** */
+
 .pokedex {
     min-width: 660px;
     width: fit-content;
@@ -69,6 +73,10 @@ body {
     left: 120px;
 }
 
+/* *************************************************** */
+/* ***********       Pokedex Halves     ************* */
+/* *************************************************** */
+
 .pokedexMain{
     display: flex;
     position: relative;
@@ -93,12 +101,45 @@ body {
     margin-top: 0px;
 }
 
-.screen {
-
-}
-
 .pokedexRight {
     border-radius: 0 50px 50px 0;
     right: 0;
     background-color: var(--bg-color-red);
 }
+
+.pokedexCenter{
+    position: absolute;
+    z-index: 5;
+    left: 305px;
+    width: 50px;
+    height: 100%;
+    border-radius: 30px;
+    outline: 1px solid black;
+    background-color: var(--bg-color-red);
+    box-shadow: 5px 2px 3px 3px #484747b4, -5px 2px 3px 3px #484747b4;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    
+}
+
+.line{
+    outline: 1px solid black;
+}
+.line1{
+    margin-top: -25px;
+}
+.line2{
+    margin-top: 25px;
+}
+.line3{
+    margin-top: -25px;
+}
+.line4{
+    margin-top: 25px;
+}
+
+/* *************************************************** */
+/* ***********       Pokedex Screens     ************* */
+/* *************************************************** */
