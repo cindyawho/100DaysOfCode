@@ -35,6 +35,38 @@ body {
     border-radius: 50px 0 0 0px;
     box-shadow: 0px 5px 10px 2px black;
     background-color: var(--bg-color-red);
+    display: flex;
+}
+
+.camera {
+    position: relative;
+    top: 25px;
+    left: 50px;
+    background-color: #232323;
+    outline: 7px solid var(--accent-color-gray);
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+}
+.smallCircle {
+    position: relative;
+    top: 25px;
+    outline: 2px solid var(--accent-color-gray);
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+}
+.redCircle{
+    background-color: var(--bg-color-red);
+    left: 90px;
+}
+.yellowCircle{
+    background-color: #E6FF05;
+    left: 105px;
+}
+.greenCircle{
+    background-color: #44FF05;
+    left: 120px;
 }
 
 .pokedexMain{
