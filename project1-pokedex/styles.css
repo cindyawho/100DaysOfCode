@@ -85,7 +85,7 @@ body {
 
 .pokedexHalf{
     width: 50%;
-    min-width: 330px;
+    min-width: 500px;
     max-width: 700px;
     min-height: 500px;
     max-height: 700px;
@@ -110,7 +110,7 @@ body {
 .pokedexCenter{
     position: absolute;
     z-index: 5;
-    left: 305px;
+    left: 475px;
     width: 50px;
     height: 100%;
     border-radius: 30px;
@@ -143,3 +143,10 @@ body {
 /* *************************************************** */
 /* ***********       Pokedex Screens     ************* */
 /* *************************************************** */
+
+.grayRectangle{
+
+}
+.screen{
+
+}
