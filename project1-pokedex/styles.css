@@ -99,6 +99,7 @@ body {
     min-height: 500px;
     max-height: 700px;
     margin-top: 0px;
+    padding-top: 50px;
 }
 
 .pokedexRight {
