@@ -67,4 +67,8 @@ async function getPokemon(name) {
             ul.appendChild(li);
         }
 
+        const image = document.getElementById("pokemon-Sprite");
+        image.src = data.sprites.front_default;
     }
+
+    // IDEA: when image is clicked, switch to back of pokemon
