@@ -5,7 +5,7 @@ async function getPokemon(name) {
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
         const data = await response.json();
-        console.log(data);
+        // console.log(data);
         updatePokedex(data);
     } catch (error) {
         console.error("Error fetching Pokémon:", error);
@@ -51,6 +51,20 @@ async function getPokemon(name) {
         idP.innerHTML = "ID: " + data.id;
 
         // Abilities
-        const abilities = document.getElementById("pokemon-Abilities");
+        // console.log(data.abilities);
+        const container = document.getElementById("abilitiesContainer");
+        let ul = document.createElement('ul');
+        ul.setAttribute('id', 'pokemon-Abilities');
+        container.appendChild(ul);
+
+        let abilities = data.abilities;
+        abilities.forEach(renderAbility);
+
+        function renderAbility(element, i, arr){
+            var li = document.createElement('li');
+            li.setAttribute('class','ability');
+            li.innerHTML = element.ability.name;
+            ul.appendChild(li);
+        }
 
     }
