@@ -81,7 +81,6 @@ body {
 .pokedexMain{
     display: flex;
     position: relative;
-    z-index: -1;
 }
 
 .pokedexHalf{
@@ -164,6 +163,7 @@ body {
 }
 .searchBar{
     z-index: 5;
+    padding: 15px;
 }
 .screen{
     position: relative;
