@@ -3,7 +3,8 @@
 
 let spriteFront = true;
 
-async function getPokemon(name) {
+async function getPokemon() {
+    let name = document.getElementById('searchInput').value;
     try {
         const response = await fetch(`https://pokeapi.co/api/v2/pokemon/${name}`);
         const data = await response.json();
@@ -57,6 +58,7 @@ function updatePokedex(data){
     // Abilities
     // console.log(data.abilities);
     const container = document.getElementById("abilitiesContainer");
+    container.innerHTML = ""
     let ul = document.createElement('ul');
     ul.setAttribute('id', 'pokemon-Abilities');
     container.appendChild(ul);
